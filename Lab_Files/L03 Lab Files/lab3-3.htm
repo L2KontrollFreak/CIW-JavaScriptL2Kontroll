@@ -5,12 +5,12 @@
 <title>Lab 3-3</title>
 
 <script type="text/javascript">
-<!--
+//<!--
 
 var numCorrect = 0;
-
+ function runningTotal()
 function takeTest() {
-var response="";
+var response="a1";
 var points = 0;
 
 var q1 = "What company developed Javascript?";
@@ -22,15 +22,15 @@ var a2 = 26;
 var q3 = "With what object-oriented programming language\n is Javascript often compared and confused?";
 var a3 = "JAVA";
 
-response = prompt(q1,"");
+response = prompt(q1,"a1");
 if (response) points = runningTotal((response.toUpperCase() == a1) ? 1 : 0);
 alert(points);
 
-response = prompt(q2,"");
+response = prompt(q2,"a2");
 if (response) points = runningTotal((response == a2) ? 1 : 0);
 alert(points);
 
-response = prompt(q3,"");
+response = prompt(q3,"a3");
 if (response) points = runningTotal((response.toUpperCase() == a3) ? 1 : 0);
 alert("You answered a total of " + points + " correctly.");
 
