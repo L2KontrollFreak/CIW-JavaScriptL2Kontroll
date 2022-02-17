@@ -21,10 +21,15 @@ function checkGrade(form) {
   to 91, output an alert that informs the user that 
   their grade is an A.
 *****************************************************/
- 
- 
- 
- 
+ if(myGrade >= 91){
+   alert(" Your Grade Is An A")
+ }
+else if (myGrade >= 80){
+  alert("Your Grade Is An B")
+}
+   else if(myGrade >= 70){
+  alert("Your Grade Is An C")
+}
  
  
  
@@ -60,6 +65,16 @@ function checkGrade(form) {
 <option>82</option>
 <option>81</option>
 <option>80</option>
+<option>79</option>
+<option>78</option>
+<option>77</option>
+<option>76</option>
+<option>75</option>
+<option>74</option>
+<option>73</option>
+<option>72</option>
+<option>71</option>
+<option>70</option>
 </select>
 <p>
 <input type="button" value="Check Grade" onclick=
