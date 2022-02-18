@@ -18,17 +18,12 @@
   On each iteration of the loop, use a document.write() statement to 
   output the value of the loop counter variable i only if it is evenly 
   divisible by 7. 
-
   Hint: Use the modulus operator (%) and the continue statement
   ********************************************************************/
-  for (var i = 1; i <= 100; i++) {
-    var i=7;
-    while(i <=7){
-      i++;
-      if (i % 4) continue;
-    }
+  for (var i = 1; i <= 100; i++) 
+   if(i % 7 == 0)
     document.write(i + "<br />");
-  }
+  
 
 //-->
 </script>
