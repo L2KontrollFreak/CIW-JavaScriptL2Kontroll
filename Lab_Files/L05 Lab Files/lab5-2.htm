@@ -14,7 +14,7 @@
 
 function checkGrade(form) {
   var myGrade = parseFloat(form.myText.value);
-  
+  var myNumber= parseFloat(form.myText.value);
 /***********************************************
   Create a while statement. In the conditional 
   expression, use the isNaN function to test the
@@ -30,11 +30,13 @@ function checkGrade(form) {
 
 
   
-  if(myGrade >= 91) {
+  if (myGrade >= 91) {
     alert("Your grade is an A.");
+    (isNaN(myNumber >= 91))
   }
-  else if(myGrade >= 81 && myGrade <= 90) { 
+  else if((myGrade>= 81 && myGrade <= 90)) { 
     alert("Your grade is a B.");
+    (isNaN(myNumber >= 81 && myNumber <= 90))
   }
   else {
     alert("Your grade is a C or lower.");
