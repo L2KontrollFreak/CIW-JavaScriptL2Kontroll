@@ -12,7 +12,7 @@
     
     textColor = prompt("Please enter a text color:","white");
     backColor = prompt("Please enter a background color:","black");
-    pageTitle = prompt("The page will be titled: ","Default Title");
+    pageTitle = prompt("The page will be titled: ","Tacos");
     yourText = prompt("Add content to the new document:", "page content");
 
     pageContent = "<html><head><title>";
@@ -24,8 +24,21 @@
     docWindow = open("","docWin","width=250,height=150,resizable=1,status=1");
     // Write your code here
   }
-   writeToDocument()
-   with (docWindow.document)
+   window.open=(docwindow)  
+  with
+   textColor = prompt("Please enter a text color:","white");
+    backColor = prompt("Please enter a background color:","black");
+    pageTitle = prompt("The page will be titled: ","Tacos");
+    yourText = prompt("Add content to the new document:", "page content");
+
+    pageContent = "<html><head><title>";
+    pageContent += pageTitle + "</title>";
+    pageContent += "<script>alert('The page ' + document.title + ' was created: ' + document.lastModified)</script>";
+    pageContent += "</head><body><strong>";
+    pageContent += "</strong></body></html>";
+   
+   
+
 //-->
 </script>
 

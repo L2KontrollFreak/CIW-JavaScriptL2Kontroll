@@ -5,7 +5,7 @@
 <title>Lab 6-5</title>
 
 <script type="text/Javascript">
-<!--
+//<!--
     var imagename = "";
 
 /**************************************************************
@@ -31,15 +31,15 @@
 	
 	function imageOn(imagename) {
 	  if (document.images) {
-	    (imagename == "ciw")  ? document.images[0].src = ciw_on.src : "";
-		(imagename == "ciw1")  ? document.images[1].src = ciw1_on.src : "";
+	    (imagename == "ciw")  ? document.images[0].src = ciw_on.src : "ciw";
+		(imagename == "ciw1")  ? document.images[1].src = ciw1_on.src : "ciw";
 	  }
 	}
 	
 	function imageOff(imagename) {
 	  if (document.images) {
-	    (imagename == "ciw") ? document.images[0].src = ciw_off.src : "";
-		(imagename == "ciw1") ? document.images[1].src = ciw1_off.src : "";
+	    (imagename == "ciw") ? document.images[0].src = ciw_off.src : "ciw";
+		(imagename == "ciw1") ? document.images[1].src = ciw1_off.src : "ciw";
 	  }
 	}
 	
