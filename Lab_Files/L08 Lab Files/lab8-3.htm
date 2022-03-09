@@ -5,8 +5,15 @@
 <title>Lab 8-3</title>
 
 <script type="text/javascript">
-<!--
-    
+//<!--
+  function* idGen() {
+      var id = 1;
+      while(true)
+      yield id++;
+  }  
+  var gen = idGen();
+  console.log(gen.next().value)
+  console.log(gen.next().value)
 // write your code here
 
 
