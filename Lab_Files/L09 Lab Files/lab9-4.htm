@@ -22,8 +22,28 @@
             div = document.getElementById("SetDiv");
             }
             alert(div.id);  
-            alert(div.special_attribute);   
+            alert(div.special_attribute);  
+            changeValues; 
          }   
+         function changeValues() {
+             if (div == null){
+                 div = document.getElementById("SetDiv");
+             }
+             var d = document.getElementById("SetDiv");
+             d.setAttribute("title", "div1");
+             alert(div.title);
+             RemoveValues();
+            
+         }
+         function RemoveValues() {
+             if (div == null) {
+                 div = document.getElementById("SetDiv")
+             }
+            var d = document.getElementById("SetDiv");
+             d.removeAttribute("title");
+             alert(div.title);
+             RemoveValues();
+         }
     </script>
 </body>
 </html>
