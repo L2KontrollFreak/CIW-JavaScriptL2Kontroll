@@ -37,12 +37,20 @@
          }
          function RemoveValues() {
              if (div == null) {
-                 div = document.getElementById("SetDiv")
+                 div = document.getElementById("SetDiv");
              }
             var d = document.getElementById("SetDiv");
              d.removeAttribute("title");
              alert(div.title);
-             RemoveValues();
+             changeValuesBack();
+         }
+         function changeValuesBack(){
+             if (div == null){
+                 div = document.getElementById("SetDiv");
+             }
+             var d = document.getElementById("SetDiv");
+             d.setAttribute("title","div2");
+             alert(div.title);
          }
     </script>
 </body>
