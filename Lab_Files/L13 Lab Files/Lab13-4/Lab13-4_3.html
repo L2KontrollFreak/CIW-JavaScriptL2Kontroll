@@ -17,7 +17,7 @@ function loadDoc() {
         type: "POST",
         url: "example1.txt", // There is no such file as example1.txt file.
         data: {x: "y"},
-        dataType: "text",
+        dataType: "json",
         success: function(result) {
             document.getElementById("demo").innerHTML = result;
         }, 
